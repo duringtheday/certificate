@@ -1,0 +1,106 @@
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #fdfdfd;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.certificate {
+    border: 2px solid #ddd;
+    padding: 2rem;
+    width: 800px;
+    background: 
+      /* Fondo azul eléctrico que cubre todo */
+      linear-gradient(135deg, #0d47a1 0%, #1a73e8 100%),
+      /* Vetas en esquina superior izquierda */
+      repeating-linear-gradient(
+        45deg,
+        orange 0,
+        orange 5px,
+        yellow 5px,
+        yellow 10px
+      );
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, left top;
+    background-size: cover, 150px 150px; /* azul cubre todo, vetas sólo 150x150 */
+    color: #f0f0f0;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+}
+
+
+
+.logo {
+    width: 300px;
+    margin-bottom: 1rem;
+    filter: brightness(0) invert(1); /* Si el logo es oscuro, se invierte para verse bien */
+}
+
+.academy-name {
+    font-size: 1.5rem;
+    margin: 0.2rem 0;
+    color: #ffe082; /* Amarillo suave */
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #ffd54f; /* Amarillo */
+}
+
+.certificate-title {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: #ff6f00; /* Naranja fuerte para destacar */
+}
+
+.text {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #fafafa; /* Texto muy claro */
+}
+
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.tools-list li {
+    background: rgba(255 255 255 / 0.2); /* Fondo blanco semi-transparente */
+    color: #fff; /* Texto blanco */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    backdrop-filter: blur(5px); /* Suave efecto vidrio */
+}
+
+.signature {
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #ffd54f; /* Amarillo suave */
+}
+
+/* Print Button */
+.print-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    background-color: #ff6f00; /* Naranja vibrante */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1.5rem;
+}
+
+.print-button:hover {
+    background-color: #e65100;
+}
